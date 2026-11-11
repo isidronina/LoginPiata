@@ -1,11 +1,8 @@
-// Chave onde a sessão do usuário é salva no navegador (LocalStorage)
-const SESSION_KEY = 'usuario_sessao';
 
-// E-mail e senha permitidos para entrar (apenas para o protótipo)
+const SESSION_KEY = 'usuario_sessao';
 const EMAIL_OK = 'console.log220@gmail.com';
 const SENHA_OK = 'adm26pt@';
 
-// Isso serve para mostrar ou esconder uma mensagem de erro na tela
 // Se a mensagem for vazia, o erro some
 function showError(el, message = '') {
   el.textContent = message;
@@ -62,6 +59,6 @@ form?.addEventListener('submit', (e) => {
     return;
   }
 
-  // Abre a próxima página (dashboard)
+  
   window.location.href = 'dashboard.html';
 });
