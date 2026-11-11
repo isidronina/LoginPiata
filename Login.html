@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <!-- Isso define o idioma e os acentos da página -->
+  
   <meta charset="UTF-8">
-  <!-- Isso faz a página se ajustar ao tamanho da tela do celular -->
+  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Título que aparece na aba do navegador -->
+  
   <title>Login - Painel Administrativo</title>
 
-  <!-- Isso liga o arquivo de estilos (cores, layout, fontes) -->
+  
   <link rel="stylesheet" href="Login.css">
 </head>
 <body>
@@ -26,13 +26,13 @@
       <div class="login_caixa">
 
         <!--
-          NAVEGAÇÃO (para quem for ligar as páginas depois):
+          
           Este link leva o usuário de volta à página inicial do site.
-          Se o nome da página inicial for outro, é só trocar o "index.html" abaixo.
+          
         -->
         <a href="index.html" class="botao_voltar">‹ Voltar ao site</a>
 
-        <!-- Título e subtítulo da página -->
+      
         <h1 class="titulo_pagina">Bem-vindo de volta!</h1>
         <p class="descricao_pagina">Entre com seus dados para acessar sua conta.</p>
 
@@ -42,7 +42,7 @@
           <!-- Campo de e-mail -->
           <div class="campo_formulario">
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="console.log220@gmail.com" autocomplete="email" required>
+            <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" autocomplete="email" required>
             <!-- Aqui aparece o erro do e-mail (o JS mostra e esconde) -->
             <small class="mensagem_erro" data-error="email" hidden></small>
           </div>
@@ -53,8 +53,8 @@
               <label for="senha">Senha</label>
 
               <!--
-                NAVEGAÇÃO: leva para a página de recuperar senha.
-                Se o nome da página for outro, troque o "esqueci-senha.html".
+               leva para a página de recuperar senha.
+              
               -->
               <a href="esqueci-senha.html" class="link_destaque">Esqueci minha senha</a>
             </div>
@@ -76,8 +76,7 @@
 
           <p class="texto_cadastro">
             <!--
-              NAVEGAÇÃO: leva para a página de cadastro.
-              Se o nome da página for outro, troque o "cadastro.html".
+               leva para a página de cadastro.
             -->
             Não tem uma conta? <a href="cadastro.html" class="link_destaque">Cadastre-se</a>
           </p>
@@ -86,11 +85,6 @@
     </section>
   </main>
 
-  <!--
-    Isso liga o arquivo de JavaScript (mostrar senha, validar login e abrir o dashboard).
-    NAVEGAÇÃO: a página aberta após o login correta é definida no final do Login.js
-    (linha com window.location.href = 'dashboard.html').
-  -->
   <script src="Login.js"></script>
 </body>
 </html>
